@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import Planet from "./Planet";
-import { ReactQueryDevtools } from 'react-query/devtools'
+import { ReactQueryDevtools } from "react-query/devtools";
 
 const queryClient = new QueryClient();
 const fetchPanets = async () => {
@@ -9,7 +9,10 @@ const fetchPanets = async () => {
 };
 
 const Planets = () => {
-  const { data, status } = useQuery("Planets", fetchPanets);
+  const { data, status } = useQuery("Planets", fetchPanets, {
+    staleTime: 0,
+    onSucces: () => console.log("data fetch with no pronlemas"),
+  });
   console.log("data", data, "status", status);
   return (
     <>
