@@ -4,17 +4,24 @@ body {
   background: #222;
   color: #ddd;
   text-align: center;
+  background-image: url('./../public/assets/anakin.jpg');
+  background-position: 50%;
 }
-.App{
+
+.App {
   width: 960px;
   margin: 0 auto;
 }
-h1{
-  color: #ffff57;
-  font-size: 4em;
-  letter-spacing: 2px;
+
+h1 {
+  letter-spacing: 3px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ffff57;
+  font-size: 5em;
+  color: #000000;
 }
-button{
+
+button {
   margin: 0 10px;
   background: transparent;
   border: 3px solid #ccc;
@@ -24,28 +31,35 @@ button{
   font-size: 1.2em;
   cursor: pointer;
 }
-button:hover{
+
+button:hover {
   color: #fff;
-  border-color: #fff;;
+  border-color: #fff;
+  ;
 }
-.content{
+
+.content {
   text-align: left;
 }
-.card{
+
+.card {
   padding: 8px 16px;
   background: #1b1b1b;
   margin: 16px 0;
   border-radius: 20px;
 }
-.card p{
+
+.card p {
   margin: 6px 0;
   color: #999;
 }
-.card h3{
+
+.card h3 {
   margin: 10px 0;
   color: #ffff57;
 }
-button:disabled{
+
+button:disabled {
   opacity: 0.2;
   cursor: not-allowed;
 }

@@ -22,7 +22,6 @@ const Planets = () => {
   } = useQuery(["planets", "hello,ninjas", page], () => fetchPlanets(page), {
     keepPreviousData: true,
   });
-  console.log("data", data, "status", status);
 
   return (
     <>
