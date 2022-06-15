@@ -9,7 +9,7 @@ const Planets = () => {
   const [page, setPage] = useState(1);
 
   const fetchPlanets = (page = 0) =>
-    fetch("http://swapi.dev/api/planets/?page=" + page).then((res) =>
+    fetch("https://swapi.dev/api/planets/?page=" + page).then((res) =>
       res.json()
     );
 
